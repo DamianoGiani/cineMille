@@ -47,7 +47,7 @@ public class MovieCatalog {
 
 
         while (!inputValido) {
-            System.out.print("Inserisci la data di inizio (formato: yyyy-MM-dd, premi Invio per saltare): ");
+            System.out.print("Inserisci la data di inizio (formato: yyyy-MM-dd, premi Invio per specificare solo la data di Fine Programmazione o per visualizzare i film attualmente in sala): ");
             String inputInizio = scanner.nextLine();
 
             if (inputInizio.isEmpty()) {
@@ -65,7 +65,7 @@ public class MovieCatalog {
         inputValido = false;
 
         while (!inputValido) {
-            System.out.print("Inserisci la data di fine (formato: yyyy-MM-dd, premi Invio per saltare): ");
+            System.out.print("Inserisci la data di fine (formato: yyyy-MM-dd, premi Invio per visualizzare i film attualmente in sala o per utilizzare solo la data di Inizio Programmazione): ");
             String inputFine = scanner.nextLine();
 
             if (inputFine.isEmpty()) {
